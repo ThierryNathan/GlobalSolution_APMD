@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td>${viagem.dataViagem}</td>
                     <td>${viagem.localInicio}</td>
                     <td>${viagem.localDestino}</td>
-                    <td>${viagem.quantidadeResiduos}</td>
+                    <td>${viagem.quantidadeResiduos + " kg"}</td>
                     <td>${viagem.descricaoViagem}</td>
                     <td><button onclick="deleteViagem('${viagem.id}')">Excluir</button></td>
                 `;

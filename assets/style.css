@@ -90,7 +90,7 @@ nav ul li a:hover, nav ul li a:focus {
 
 main {
     padding: var(--padding-base);
-    max-width: 50rem;
+    max-width: 90%;
     margin: 0 auto;
     background: white;
     border-radius: var(--border-radius);
@@ -186,7 +186,7 @@ form button:hover, table button:hover {
 }
 
 .banner img {
-    max-width: 100%;
+    max-width: 50%;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
@@ -218,4 +218,46 @@ form button:hover, table button:hover {
 
 .curiosidade p {
     font-size: 1.1rem;
+}
+
+section {
+    margin-bottom: var(--margin-base);
+}
+
+#search-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: var(--margin-base);
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+table td:last-child {
+    white-space: nowrap;
 }
