@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Viagens - Limpeza dos Oceanos</title>
+    <link rel="stylesheet" href="assets\style.css">
+    <script defer src="js\script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Viagens</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="consulta.html">Consulta de Viagens</a></li>
+                <li><a href="totalizados.html">Dados Totalizados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Registre uma nova viagem</h2>
+            <form id="viagem-form">
+                <label for="nome-embarcacao">Nome da Embarcação:</label>
+                <input type="text" id="nome-embarcacao" name="nome-embarcacao" required>
+
+                <label for="data-viagem">Data da Viagem:</label>
+                <input type="date" id="data-viagem" name="data-viagem" required>
+
+                <label for="local-inicio">Local de Início:</label>
+                <input type="text" id="local-inicio" name="local-inicio" required>
+
+                <label for="local-destino">Local de Destino:</label>
+                <input type="text" id="local-destino" name="local-destino" required>
+
+                <label for="quantidade-residuos">Quantidade de Resíduos Coletados (kg):</label>
+                <input type="number" id="quantidade-residuos" name="quantidade-residuos" required min="0">
+
+                <label for="descricao-viagem">Descrição da Viagem:</label>
+                <textarea id="descricao-viagem" name="descricao-viagem" rows="4" required></textarea>
+
+                <button type="submit">Registrar Viagem</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

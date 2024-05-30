@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Viagens - Limpeza dos Oceanos</title>
+    <link rel="stylesheet" href="assets\style.css">
+    <script defer src="js\script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Consulta de Viagens</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro de Viagens</a></li>
+                <li><a href="totalizados.html">Dados Totalizados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Viagens Registradas</h2>
+            <input type="text" id="search-input" placeholder="Buscar viagens..." oninput="filterViagens()">
+            <table id="viagens-tabela">
+                <thead>
+                    <tr>
+                        <th>Nome da Embarcação</th>
+                        <th>Data da Viagem</th>
+                        <th>Local de Início</th>
+                        <th>Local de Destino</th>
+                        <th>Resíduos Coletados (kg)</th>
+                        <th>Descrição</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados preenchidos pelo JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
